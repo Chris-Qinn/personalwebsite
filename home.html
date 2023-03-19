@@ -20,7 +20,7 @@
      <link rel="shortcut icon" type=image/png href=/res/logo.png>
      <link rel=stylesheet href=https://unpkg.com/aos@next/dist/aos.css>
      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel=stylesheet>
-     <link rel="stylesheet" href="layout-styles.css">
+     <link rel="stylesheet" href="css/layout-styles.css">
    </head>
    <body>
       <div id=landing-container>
@@ -40,8 +40,8 @@
                           <div id=landing-overlay class=lt-content-column>
                                <div>
                                     <div id=main-landing>
-                                         <h1 class=mobile-hide>Hi!</br>I'm Chris Qin,</h1>
-                                         <h1 class=mobile-only>Hi!</br>I’m Chris Qin,</h1>
+                                         <h1 class=mobile-hide>Hi!<br/>I'm Chris Qin,</h1>
+                                         <h1 class=mobile-only>Hi!<br/>I’m Chris Qin,</h1>
                                          <div class=rotating-text>
                                               <h1 class=mobile-hide>a</h1>
                                               <h1><span class="word col1"> creator.</span>
@@ -80,12 +80,12 @@
                                            Welcome to my website! My name is Chris, a Software Developer interested in game design, AI, and innovative tech — anything that can make technology work better and more fun for everyone. I am currently available to work!
                                          </p>
                                          <p>In my spare time, you can find me gaming with friends, working out, learning guitar, or attempting adventurous recipes online!</p>
-                                              <p>Feel free to view my <a href=ChrisQin_Resume.pdf target="_blank">resume</a>, check out <a target=_blank rel=noreferrer href=https://github.com/ChrisQinA00944299?tab=repositories>my GitHub</a> for more projects, or
-           contact me via my <a target=_blank rel=noreferrer href=https://www.linkedin.com/in/chrisqin0420/>LinkedIn</a>. I'm always happy to chat with new people!</p></br>
+                                              <p>Feel free to view my <a href=doc/ChrisQin-res.pdf target="_blank">resume</a>, check out <a target=_blank rel=noreferrer href="https://github.com/ChrisQinA00944299?tab=repositories">my GitHub</a> for more projects, or
+           contact me via my <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chrisqin0420/">LinkedIn</a>. I'm always happy to chat with new people!</p><br/>
            </div>
 <div class="lt-flex-50 img-container">
    <div class=deco loading=lazy></div>
-   <img class="lt-shadow me" src="Me.jpg" alt="CQ" loading=lazy>
+   <img class="lt-shadow me" src="media/Me.jpg" alt="CQ" loading=lazy>
    <div class="lt-shadow highlight-container">
        <div class=highlight>
            <div style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;height:auto;>
@@ -104,7 +104,7 @@
     <span style=color:#ff79c6>if </span>(<span style=color:#ff79c6>!</span><span style=color:#7ec12c>hadCaffeine</span>(coffee)) {
     &nbsp;&nbsp;readyForWork<span style=color:#ff79c6> = </span><span style=color:#c585f7>false</span>;
     }
-    <span style=color:#ff79c6>if </span>(LeetCodes<span style=color:#ff79c6> < </span>9000) {
+    <span style="color:#ff79c6">if </span>(LeetCodes<span style="color:#ff79c6"> < </span>9000) {
     &nbsp;&nbsp;readyForWork<span style=color:#ff79c6> = </span><span style=color:#c585f7>false</span>;
     }
     <span style=color:#ff79c6>return </span>readyForWork;
@@ -115,11 +115,44 @@
 <div class=lt-content-column id=experience data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
    <h2 class=side-header-container><span class="hover side-header">Experience</span></h2>
    <div id=expcards>
-       <div class=accordion data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
+            <div class=accordion data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
          <div class="lt-shadow lt-card lt-flex-row accordion-item">
             <div class=accordion_body>
                <div class="lt-flex-row job-info">
-                  <img class=company-logo src=wiibid.jpeg title="WiiBid Solutions">
+                  <img class=company-logo src=media/volterra.png title="Volterra Technologies">
+                  <div>
+                     <h2 class=job_name>Volterra Technologies</h2>
+                     <p class=job_title>November 2022 - April 2023 // Back-End Developer</p>
+                  </div>
+                  <div class=accordion-arrow></div>
+               </div>
+               <div class=accordion-panel>
+                  <div class="side-by-side">
+                    <img src=media/volterra1.png style="margin-right:15px">
+                  </div>
+                  <p>Setup and document necessary cloud software for main MVP. Use AWS Lambda, Kinesis, and Timestream to setup base solution architecture. Browse AWS non-relational database with complex SQL and Flux queries to filter and manage data in AWS Timestream. </p>
+                  <ul class=lt-hl>
+                     <li>AWS</li>
+                     <li>SQL</li>
+                     <li>Python</li>
+                  </ul>
+               </div>
+            </div>
+            <div class=lang_bar>
+               <span class=tooltiptext>AWS, SQL, Python</span>
+               <div class="bar_container lt-flex-col">
+                  <div style="background-color:#011e41;flex:0 0 60%"></div>
+                  <div style="background-color:#00b2e3;flex:0 0 30%"></div>
+                  <div style="background-color:#76bc21;flex:0 0 10%"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class=accordion data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
+         <div class="lt-shadow lt-card lt-flex-row accordion-item">
+            <div class=accordion_body>
+               <div class="lt-flex-row job-info">
+                  <img class=company-logo src=media/wiibid.jpeg title="WiiBid Solutions">
                   <div>
                      <h2 class=job_name>WiiBid Solutions</h2>
                      <p class=job_title>July 2021 - December 2021 // Application Specialist</p>
@@ -128,7 +161,7 @@
                </div>
                <div class=accordion-panel>
                   <div class="side-by-side">
-                    <img src=wiibid1.png style="margin-right:15px"><img src=wiibid2.png>
+                    <img src=media/wiibid1.png style="margin-right:15px"><img src=media/wiibid2.png>
                   </div>
                   <p>Developed and fixed features in the application with C# and ASP.NET Model View Controller. Wrote a framework in Selenium for automated testing for the QA process that reduced processing time by 50% from manual testing. Developed company website on Wordpress.</p>
                   <ul class=lt-hl>
@@ -154,7 +187,7 @@
          <div class="lt-shadow lt-card lt-flex-row accordion-item">
             <div class=accordion_body>
                <div class="lt-flex-row job-info">
-                  <img class=company-logo src=vgc.png title="Vancouver General Contrators">
+                  <img class=company-logo src=media/vgc.png title="Vancouver General Contrators">
                   <div>
                      <h2 class=job_name>VGC Vancouver General Contrators</h2>
                      <p class=job_title>Nov 2020 - Dec 2020 // Web Developer</p>
@@ -163,7 +196,7 @@
                </div>
                <div class=accordion-panel>
                    <div class="example-images">
-                    <img src=vgcwork.png>
+                    <img src=media/vgcwork.png>
                   </div>
                   <p>Overhauled existing company website and designed new blueprint. Updated modules and wrote new ones in HubSpot using HUBL HTML, which allowed for easier website customization. With the HotJar data I collected, results showed that my new designs yielded 10% longer view time than the older content.</p>
                   <ul class=lt-hl>
@@ -189,7 +222,7 @@
          <div class="lt-shadow lt-card lt-flex-row accordion-item">
             <div class=accordion_body>
                <div class="lt-flex-row job-info">
-                  <img class=company-logo src=strong.png title=stronggame>
+                  <img class=company-logo src=media/strong.png title=stronggame>
                   <div>
                      <h2 class=job_name>Strong Game</h2>
                      <p class=job_title>April 2020 - May 2020 // Software Developer</p>
@@ -198,7 +231,7 @@
                </div>
                <div class=accordion-panel>
                    <div class="example-images">
-                    <img src=stronggame.png>
+                    <img src=media/stronggame.png>
                   </div>
                   <p>Developed an online quiz icebreaker game as a web application. Created and fixed application features with JavaScript. Managed the Git repository and Agile meetings for daily stand-up.</p>
                   <ul class=lt-hl>
@@ -225,6 +258,41 @@
 <div id=projects class=lt-content-column data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
    <h2 class=side-header-container><span class="hover side-header">Projects</span></h2>
    <div class=project_list>
+              <div class=accordion>
+         <div class="accordion-item lt-shadow lt-card lt-flex-row" data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
+            <div class=accordion_body>
+               <div class="proj_desc lt-flex-row">
+                  <h3 class=project-title>MERN Application // </h3><span style="font-family: source sans pro; font-style: italic"> March 2023&nbsp;</span>
+                  <p class=short-desc>MERN stack application with CRUD functionality</p>
+                  <div class=spacer></div>
+                  <a target="_blank" href=https://github.com/ChrisQinA00944299/MERN-stack-app>github</a>
+                  <div class=accordion-arrow></div>
+               </div>
+               <div class=accordion-panel>
+                   <div class="example-images">
+                    <img src=media/mern.png>
+                  </div>
+                  <p>A MERN (MongoDB, Express, React, Node) application using Refine (a react-based framework) featuring individual users stored in a MongoDB. The user will have property objects stored under his/her name and will be able to perform CRUD (Create, Read, Update, Delete) functions on them. </p>
+                  <ul class=lt-hl>
+                     <li>MongoDB</li>
+                     <li>Express</li>
+                     <li>React</li>
+                     <li>Node</li>
+                  </ul>
+               </div>
+            </div>
+            <div class=lang_bar>
+               <span class=tooltiptext>MongoDB, Express, React, Node</span>
+               <div class="bar_container lt-flex-col">
+                  <div style="background-color:#90EE90;flex:0 0 15%"></div>
+                  <div style="background-color:#474747;flex:0 0 10%"></div>
+                  <div style="background-color:#9932CC;flex:0 0 65%"></div>
+                  <div style="background-color:#85bc52;flex:0 0 10%"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
       <div class=accordion>
          <div class="accordion-item lt-shadow lt-card lt-flex-row" data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
             <div class=accordion_body>
@@ -240,7 +308,7 @@
                        <div class="separator-div">&nbsp;
                         </div>
                        <video width="50%" height="300" controls>
-                           <source src="chatapp.mp4" type="video/mp4">
+                           <source src="media/chatapp.mp4" type="video/mp4">
                        </video>
                    </div>
                   <p>I wrote this project to practice my understanding of React and to showcase my understanding of asynchronous function callbacks. Simple sign in with your name, and start chatting with anyone else who is in the room! </p>
@@ -303,7 +371,7 @@
                </div>
                <div class=accordion-panel>
                    <div class="example-images">
-                    <img src=wolfsquared.png>
+                    <img src=media/wolfsquared.png>
                   </div>
                   <p>Wolf Squared (^2) is a 2D platformer developed in Gedot Studios for UBC GameJam 2020. Wrote the game mechanics and game physics with Gedot Pythonic scripts, designed tiles in PixelArt, and created complex game-levels with Gedot.</p>
                   <ul class=lt-hl>
@@ -334,7 +402,7 @@
                </div>
                <div class=accordion-panel>
                    <div class="side-by-side">
-                    <img src=chess.png>
+                    <img src=media/chess.png>
                   </div>
                   <p>Java Chess project. This game was my first programming project written in Java with the Eclipse IDE. Features a timer, turn based logic, and win conditions.</p>
                   <ul class=lt-hl>
@@ -355,35 +423,6 @@
 <div id=otherprojects class=lt-content-column data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
    <h2 class=side-header-container><span class="hover side-header">Websites</span></h2>
    <div class=project_list>
-      <!-- <div class=accordion>-->
-      <!--   <div class="accordion-item lt-shadow lt-card lt-flex-row" data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>-->
-      <!--      <div class=accordion_body>-->
-      <!--         <div class="proj_desc lt-flex-row">-->
-      <!--            <h3 class=project-title>Hangman Game // </h3><span style="font-family: source sans pro; font-style: italic"> December 2021&nbsp;</span>-->
-      <!--            <p class=short-desc>&mdash; a game of Hangman written in JavaScrit/p>-->
-      <!--            <div class=spacer></div>-->
-      <!--            <a target="_blank" href=https://github.com/ChrisQinA00944299/Hangman-Game>github</a>-->
-      <!--            <div class=accordion-arrow></div>-->
-      <!--         </div>-->
-      <!--         <div class=accordion-panel>-->
-      <!--            <p>A simple Hangman game in vanilla JavaScript with hand-drawn animations to showcase my JavaScript skills. Includes a hint feature and a drawing that updates with each incorrect guess.</p>-->
-      <!--            <ul class=lt-hl>-->
-      <!--               <li>JavaScript</li>-->
-      <!--               <li>HTML</li>-->
-      <!--               <li>CSS</li>-->
-      <!--            </ul>-->
-      <!--         </div>-->
-      <!--      </div>-->
-      <!--      <div class=lang_bar>-->
-      <!--         <span class=tooltiptext>JavaScript, HTML, CSS</span>-->
-      <!--         <div class="bar_container lt-flex-col">-->
-      <!--            <div style="background-color:#90EE90;flex:0 0 50%"></div>-->
-      <!--            <div style="background-color:#474747;flex:0 0 10%"></div>-->
-      <!--            <div style="background-color:#9932CC;flex:0 0 10%"></div>-->
-      <!--         </div>-->
-      <!--      </div>-->
-      <!--   </div>-->
-      <!--</div>-->
       <div class=accordion>
          <div class="accordion-item lt-shadow lt-card lt-flex-row" data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
             <div class=accordion_body>
@@ -396,7 +435,7 @@
                </div>
                <div class=accordion-panel>
                    <video width="95%" height="300" controls>
-                       <source src="bytesense.mp4" type="video/mp4">
+                       <source src="media/bytesense.mp4" type="video/mp4">
                    </video>
                   <p>Bytesense was designed and created by a small team from scratch with Figma and vanilla front-end languages. Design freeze was deliberated over after numerous iterations, with my design being the final blueprint. I designed the UI and continually modified the application based on client feedback. I am .</p>
                   <ul class=lt-hl>
@@ -434,7 +473,7 @@
                        <div class="separator-div">&nbsp;
                         </div>
                        <video width="60%" height="300" controls>
-                           <source src="GZR.mp4" type="video/mp4">
+                           <source src="media/GZR.mp4" type="video/mp4">
                        </video>
                    </div>
                   <p>GZR was created per client specifications from my freelancing profession. Initial design freeze was prototyped in Figma with high-fidelity wireframes and then created with vanilla JS.</p>
@@ -523,8 +562,8 @@
    </div>
 </div>
 <div id=contact_buttons class=lt-centre data-aos=fade-up data-aos-duration=750 data-aos-easing=custom data-aos-offset=100>
-   <p>made by Chris Qin, © 2022</p>
-   <a target="_blank" href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO'>rr</a><a target="_blank" href=>website github</a>
+   <p>made by Chris Qin, © 2023</p>
+   <a target="_blank" href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO'>rr</a><a target="_blank" href=https://github.com/ChrisQinA00944299?tab=repositories>website github</a>
 </div>
 <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
 
